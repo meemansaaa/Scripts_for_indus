@@ -7,8 +7,9 @@ To run the script:
 4. In the terminal, write the following command 
 
 ```python 
-python ./addstring.py --batch Batch-XXX
+python ./add_string.py --batch Batch-XXX
 ```
 Here 'Batch-XXX' can be any string you want to append at the end of the file names. 
+
 
 --batch argument will add the required string which is desired to be appended.
