@@ -21,16 +21,28 @@ def add_string(config, batch):
     dir_path = config["dir_path"]
     try:
         input_files = os.listdir(dir_path)
-    except:
-        print(f"File was not found in {dir_path}")
+    except FileNotFoundError:
+        print(f"Directory was not found: {dir_path}")
+        return
+        
+    #if directory has no files
+    if len(input_files)==0:
+        print("No files in the Directory")
         return
     
     for i in input_files:
         old_path = os.path.join(dir_path, i)
+        #skip if there i a folder found
+        if not os.path.isfile(old_path):   #checking if its a file only
+            continue
         name, ext = os.path.splitext(i)
         new_name = name + '_' + batch + ext
         new_path = os.path.join(dir_path, new_name)
-        os.rename(old_path, new_path)
+        try:
+            os.rename(old_path, new_path)
+        except Exception as e:
+            print(f"Error renaming {old_path} to {new_name} : {e}")
+
         #directly renaming the old full path with the new full path, because the script is in a different folder than the fiel 
         pass
     print("Files renamed!")
