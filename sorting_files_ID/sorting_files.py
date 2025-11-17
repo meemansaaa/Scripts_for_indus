@@ -10,17 +10,14 @@ input_mednawise = dict['input_mednawise']
 input_skin = dict['input_skin']
 input_sleep = dict['input_sleep']
 destination_dir = dict['destination_dir']
+
 #print(input_dnawise)
+
 #input 
-# input_dnawise ='D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/DNAwise'
-# input_mednawise = 'D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/MEDNAwise'
-# input_skin = 'D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/SKIN'
-# input_sleep = 'D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/SLEEP'
-# destination_dir = 'D:/meemansa2/scripts/sorting_files_ID'
 directory_list =[input_dnawise, input_mednawise, input_skin, input_sleep]
 
 # Specify the directory name
-#directory_name = "GFG"
+#directory_name = ""
 
 def creating_ID_folders():
     input_files = os.listdir(input_dnawise)
@@ -87,3 +84,4 @@ creating_ID_folders()
     
     
        
+
