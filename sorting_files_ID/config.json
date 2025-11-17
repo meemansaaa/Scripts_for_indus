@@ -1,7 +1,8 @@
 {
-    "input_dnawise" : "D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/DNAwise",
-    "input_mednawise":  "D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/MEDNAwise",
-    "input_skin" : "D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/SKIN",
-    "input_sleep" : "D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/SLEEP",
+    "input_dnawise" : "D:/meemansa2/input_folder_1",
+    "input_mednawise":  "D:/meemansa2/input_folder_2",
+    "input_skin" : "D:/meemansa2/input_folder_3",
+    "input_sleep" : "D:/meemansa2/input_folder_4",
     "destination_dir" : "D:/meemansa2/scripts/sorting_files_ID"
+
 }
