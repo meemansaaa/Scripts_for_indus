@@ -6,6 +6,7 @@ import re
 with open('config.json') as f:
     dict = json.load(f)
     #print(dict)
+
 input_dnawise = dict['input_dnawise']
 input_mednawise = dict['input_mednawise']
 input_skin = dict['input_skin']
@@ -14,11 +15,6 @@ destination_dir = dict['destination_dir']
 ID_list = []
 #print(input_dnawise)
 #input 
-# input_dnawise ='D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/DNAwise'
-# input_mednawise = 'D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/MEDNAwise'
-# input_skin = 'D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/SKIN'
-# input_sleep = 'D:/meemansa2/scripts/sorting_files_ID/dummy_input_folder/SLEEP'
-# destination_dir = 'D:/meemansa2/scripts/sorting_files_ID'
 directory_list =[input_dnawise, input_mednawise, input_skin, input_sleep]
 
 # Specify the directory name
@@ -106,20 +102,16 @@ def rename_product():
             
             
     
-#creating_ID_folders()
-#sorting_files()
-#rename_product()
+creating_ID_folders()
+sorting_files()
+rename_product()
 #print(directory_list)
 
-# entering file names according to the matching IDs
-# output files forall products start with ID always.
 
-# def sort_files_to_ID_folders():
-#     # for DNAwise
-#     pass
     
 
 
     
     
        
+
